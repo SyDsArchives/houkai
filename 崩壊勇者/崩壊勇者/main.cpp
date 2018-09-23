@@ -1,9 +1,10 @@
 #include <iostream>
 #include "DxLib.h"
+#include "GameSystem.h"
 
 int main()
 {
-	std::cout << "•ö‰ó—EŽÒ" << std::endl;
-	getchar();
+	GameSystem game;
+	game.Run();
 	return 0;
 }
