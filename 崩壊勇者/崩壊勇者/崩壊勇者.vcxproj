@@ -89,7 +89,11 @@
       <Optimization>Disabled</Optimization>
       <SDLCheck>true</SDLCheck>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library/DxLib</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(SolutionDir)Library/DxLib</AdditionalLibraryDirectories>
+    </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
@@ -122,15 +126,19 @@
   <ItemGroup>
     <ClCompile Include="GamePlayingScene.cpp" />
     <ClCompile Include="GameSystem.cpp" />
+    <ClCompile Include="Grass.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Scene.cpp" />
     <ClCompile Include="Stage.cpp" />
+    <ClCompile Include="StageObject.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="GamePlayingScene.h" />
     <ClInclude Include="GameSystem.h" />
+    <ClInclude Include="Grass.h" />
     <ClInclude Include="Scene.h" />
     <ClInclude Include="Stage.h" />
+    <ClInclude Include="StageObject.h" />
     <ClInclude Include="Vector2D.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
